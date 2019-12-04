@@ -57,11 +57,6 @@ def s2(w1, w2):
 
 
 if __name__ == "__main__":
-    inp = [
-        l.split(",")
-        for l in "R75,D30,R83,U83,L12,D49,R71,U7,L72 U62,R66,U55,R34,D71,R55,D58,R83".split()
-    ]
-    print(s2(*inp))
     with open("input.txt") as f:
         line1, line2 = [l.split(",") for l in f.readlines()]
         print(s1(line1, line2))
